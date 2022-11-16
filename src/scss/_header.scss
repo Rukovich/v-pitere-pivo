@@ -4,14 +4,14 @@
 */
 .brand {
   font-weight: bold;
-  font-size: 20px; 
+  font-size: 1.2rem; 
   color:black;
   padding: 1rem 1rem;
 }
 
 .site-header {
   position: relative;
-  background-color: #e6a80e; 
+  background-color: $color-beer; 
   margin-bottom: 1em;
 }
 
@@ -35,7 +35,7 @@
   .nav__wrapper {
     display: flex;
   } 
-  }
+}
 
 @media (max-width: 599px) {
   .nav__wrapper {
@@ -44,7 +44,7 @@
     right: 0;
     left: 0;
     z-index: -1;
-    background-color: wheat;
+    background-color: $color-light;
     visibility: hidden;
     opacity: 0;
     transform: translateY(-100%);
@@ -58,9 +58,6 @@
   display: block;
   padding: 1.5rem 1rem; 
   color:black;
-  @media (max-width: 650px) {
-    font-size: 15px; 
-  }
 }
 
 .nav__toggle {
@@ -74,6 +71,8 @@
       display: block;
       position: absolute;
       right: 1rem;
-      top: 1rem; } }
+      top: 1rem; 
+    } 
+  }
 
 

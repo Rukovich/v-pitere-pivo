@@ -1,6 +1,6 @@
 
-let navToggle = document.querySelector(".nav__toggle");
-let navWrapper = document.querySelector(".nav__wrapper");
+const navToggle = document.querySelector(".nav__toggle");
+const navWrapper = document.querySelector(".nav__wrapper");
 
 navToggle.addEventListener("click", function () {
   if (navWrapper.classList.contains("active")) {
