@@ -11,6 +11,11 @@
     margin-inline: auto;
     border: 2px solid white;
     border-radius: 25px;
+
+    @media (max-width: 700px) {
+      width: 100%;
+      max-width: 300px;
+    }
   }
 
   &__caption {
@@ -24,6 +29,10 @@
     opacity: 0.4;
     transition: 0.25s;
     color:white;
+
+    @media (max-width: 700px) {
+    padding: 8px 10px;
+    }
   }
   &__caption:hover {
     opacity: 0.8;
