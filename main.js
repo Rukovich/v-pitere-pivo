@@ -5,7 +5,4 @@ import '/src/fonts/fonts.css'; //шрифты
 
 import '/src/scss/style.scss'; 
 import '/src/js/header.js'; 
-
-
-
-
+import '/src/js/tabs.js'; 
