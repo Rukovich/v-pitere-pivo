@@ -12,12 +12,15 @@ document.addEventListener('DOMContentLoaded', () => { // Структура ст
       if (body.querySelector('.tabs__content_active')) { // если уже есть активный элемент контента
         body.querySelector('.tabs__content_active').classList.remove('tabs__content_active'); // то скрываем его
       }
-      body.querySelector(`[data-tab=${getActiveTabName()}]`).classList.add('tabs__content_active'); // затем ищем элемент контента, у которого значение data-tab совпадает со значением data-tab активной кнопки и отображаем его
+      body.querySelector(`[data-tab=${getActiveTabName()}]`)
+        .classList.add('tabs__content_active'); // затем ищем элемент контента, 
+        // у которого значение data-tab совпадает со значением data-tab активной кнопки и отображаем его
     };
 
     // проверяем при загрузке страницы, есть ли активная вкладка
     if (!head.querySelector('.tabs__caption_active')) {  // если активной вкладки нет
-      head.querySelector('.tabs__caption').classList.add('tabs__caption_active'); // то делаем активной по-умолчанию первую вкладку
+      head.querySelector('.tabs__caption')
+        .classList.add('tabs__caption_active'); // то делаем активной по-умолчанию первую вкладку
     }
 
     setActiveContent(getActiveTabName()); // устанавливаем активный элемент контента в соответствии с активной кнопкой при загрузке страницы
@@ -25,10 +28,12 @@ document.addEventListener('DOMContentLoaded', () => { // Структура ст
     head.addEventListener('click', e => { // при клике на .tabs__head
       const caption = e.target.closest('.tabs__caption'); // узнаем, был ли клик на кнопке
       if (!caption) return; // если клик был не на кнопке, то прерываем выполнение функции
-      if (caption.classList.contains('tabs__caption_active')) return; // если клик был на активной кнопке, то тоже прерываем выполнение функции и ничего не делаем
+      if (caption.classList.contains('tabs__caption_active')) return; // если клик был на активной кнопке, 
+      // то тоже прерываем выполнение функции и ничего не делаем
 
       if (head.querySelector('.tabs__caption_active')) { // если уже есть активная кнопка
-        head.querySelector('.tabs__caption_active').classList.remove('tabs__caption_active') // то удаляем ей активный класс
+        head.querySelector('.tabs__caption_active')
+        .classList.remove('tabs__caption_active'); // то удаляем ей активный класс
       }
 
       caption.classList.add('tabs__caption_active'); // затем добавляем активный класс кнопке, на которой был клик
