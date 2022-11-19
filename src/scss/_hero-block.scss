@@ -1,3 +1,19 @@
 .hero-block {
     margin-top: 70px;
+
+    &__img {
+        @media (max-width: 600px) {
+            display: none;
+        }
+    }
+    &__img-mini {
+        display: none;
+        max-height: 220px;
+        margin-inline: auto;
+        @media (max-width: 600px) {
+            display: block;
+        }
+    }
 }
+
+// display: none;
