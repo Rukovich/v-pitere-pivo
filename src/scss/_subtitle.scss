@@ -2,3 +2,19 @@
   text-align: center;
   margin-bottom: 15px;
 }
+
+.text {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  margin-bottom: 30px;
+
+  @media (max-width: 950px) {
+    padding-inline: 40px;
+    font-size: 0.9rem;
+  }
+
+  span {
+    color: $color-beer;
+    font-weight: 700;
+  }
+}
