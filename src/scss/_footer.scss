@@ -1,0 +1,60 @@
+.footer {
+  background-color: $color-beer;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 10px;
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
+  }
+
+  &__text {
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 900;
+
+    @media (max-width: 600px) {
+      font-size: 1.2rem;
+    }
+
+    a {
+      color: black;
+
+      & hover{
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 600px) {
+      text-align: center;
+      padding-bottom: 10px;
+    }
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+
+  }
+
+  &__img {
+    width: 50px;
+    height: 50px;
+
+    @media (max-width: 600px) {
+    width: 40px;
+    height: 40px;
+    }
+  }
+
+}
