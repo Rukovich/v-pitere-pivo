@@ -45,3 +45,4 @@ document.addEventListener('DOMContentLoaded', () => { // Структура ст
   tabs(); // вызываем основную функцию
 
 });
+
