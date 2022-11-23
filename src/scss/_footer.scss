@@ -23,7 +23,7 @@
     a {
       color: black;
 
-      & hover{
+      & hover {
         cursor: pointer;
       }
     }
@@ -44,7 +44,6 @@
     align-items: center;
     justify-content: flex-end;
     gap: 15px;
-
   }
 
   &__img {
@@ -52,9 +51,17 @@
     height: 50px;
 
     @media (max-width: 600px) {
-    width: 40px;
-    height: 40px;
+      width: 40px;
+      height: 40px;
+    }
+
+    &:hover {
+      transition: 0.3s;
+      opacity: 0.8;
+    }
+  
+    &:active {
+      transform: scale(1.1);
     }
   }
-
 }

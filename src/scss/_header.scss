@@ -3,6 +3,16 @@
   font-size: 1.2rem;
   color: black;
   padding-left: 16px;
+
+  &:hover {
+    transition: 0.3s;
+    opacity: 0.7;
+  }
+
+  &:active {
+    transform: scale(1.1);
+    color: white;
+  }
 }
 
 .site-header {
@@ -56,6 +66,16 @@
   display: block;
   padding: 20px 16px;
   color: black;
+
+  &:hover {
+    transition: 0.3s;
+    opacity: 0.8;
+  }
+
+  &:active {
+    transform: scale(1.1);
+    color: white;
+  }
 }
 
 .nav__toggle {

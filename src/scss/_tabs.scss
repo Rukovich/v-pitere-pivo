@@ -1,6 +1,7 @@
 .tabs {
   overflow: hidden;
-  margin-top: 50px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 
   &__head {
     display: flex;
@@ -8,6 +9,7 @@
     flex-wrap: wrap;
     max-width: 50%;
     margin-inline: auto;
+    margin-bottom: 20px;
     border: 2px solid white;
     border-radius: 25px;
 
@@ -45,7 +47,7 @@
   }
   &__content {
     display: none;
-    margin: 30px;
+    // margin: 30px;
     transform: scaleY(0.8);
     opacity: 0;
     transform-origin: center top;
