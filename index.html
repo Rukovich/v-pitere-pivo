@@ -50,7 +50,7 @@
 
         <div class="tabs__content" data-tab="pods" id="pods">
 
-          <h2 class="title">Выбор подов</h2>
+          <h2 class="title" data-aos="zoom-out">Выбор подов</h2>
           <section class="cards-wrapper container">
             <div class="card">
               <div class="card__content">
@@ -133,7 +133,7 @@
         </div>
 
         <div class="tabs__content" data-tab="smoke" id="smoke">
-          <h2 class="title">Табак</h2>
+          <h2 class="title" data-aos="zoom-out">Табак</h2>
           <section class="cards-wrapper container">
 
             <div class="card">
@@ -176,8 +176,9 @@
             </div>
           </section>
         </div>
+
         <div class="tabs__content" data-tab="beer" id="beer">
-          <h2 class="title">Выбор пива</h2>
+          <h2 class="title" data-aos="zoom-out">Выбор пива</h2>
           <section class="cards-wrapper container">
             <div class="card">
               <div class="card__content">
@@ -266,7 +267,7 @@
 
   <!-- contacts Start -->
   <section class="contacts" id="contacts">
-    <h2 class="title">Где нас найти</h2>
+    <h2 class="title" data-aos="zoom-out">Где нас найти</h2>
     <div class="subtitle">станция метро Международная. <br>
       Бухарестская 74</div>
     <div class="subtitle">
@@ -284,23 +285,25 @@
   <!-- Maps End -->
 
   <!-- Description Start -->
-  <section class="description" id="aboutUs">
+  <section class="description">
     <div class="container">
-      <h2 class="title">Почему мы лучшие?</h2>
-      <h3 class="subtitle">Качество продукта</h3>
-      <p class="text">Мы соблюдаем все стандарты по хранению нашей продукции. <br>
+
+      <h2 class="title" id="aboutUs" data-aos="zoom-out">Почему мы лучшие?</h2>
+      <h3 class="subtitle" data-aos="fade-up">Качество продукта</h3>
+      <p class="text" data-aos="fade-up">Мы соблюдаем все стандарты по хранению нашей продукции. <br>
         Мы проверяем все сроки годности. Разливные напитки
         хранятся в большой кулкамере при температуре <span>+4 градуса</span>! <br>
         Всё для того, чтобы вы могли приобрести только
         первоклассные прохлаждающие напитки и <span>бомбические</span> закуски.</p>
-      <h3 class="subtitle">Индивидуальный подход</h3>
-      <p class="text">Мы <span>прислушиваемся</span> к пожеланиям наших покупателей. <br>
+      <h3 class="subtitle" data-aos="fade-up">Индивидуальный подход</h3>
+      <p class="text" data-aos="fade-up">Мы <span>прислушиваемся</span> к пожеланиям наших покупателей. <br>
         Мы выбираем только <span>лучшие</span> товары для того, чтобы
         вы
         наслаждались своими покупками. <br>
         Мы постоянно обновляем ассортимент нашей продукции и стремимся к <span>разнообразию</span> </p>
-      <h3 class="subtitle">Лучший сервис</h3>
-      <p class="text">В наших магазинах вас всегда встретят <span>приветливые</span> сотрудники, которые смогут помочь
+      <h3 class="subtitle" data-aos="fade-up">Лучший сервис</h3>
+      <p class="text" data-aos="fade-up">В наших магазинах вас всегда встретят <span>приветливые</span> сотрудники,
+        которые смогут помочь
         определиться с
         выбором.</p>
     </div>
@@ -335,6 +338,11 @@
   </div>
   </footer>
   <!-- Footer End -->
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 
