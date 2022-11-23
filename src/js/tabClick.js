@@ -1,23 +1,36 @@
+
 const podsClick = document.querySelector('#podsClick');
 const smokeClick = document.querySelector('#smokeClick');
 const beerClick = document.querySelector('#beerClick');
 
-const dataPods = '[data-tab="pods"]';
-const dataSmoke ='[data-tab="smoke"]';
-const dataBeer ='[data-tab=beer]';
+const dataPods = document.querySelector('[data-tab="pods"]');
+const dataSmoke = document.querySelector('[data-tab="smoke"]');
+const dataBeer = document.querySelector('[data-tab="beer"]');
+
+const idPods = document.querySelector('#pods');
+const idSmoke = document.querySelector('#smoke');
+const idBeer = document.querySelector('#beer');
 
 
-function clickNavigation(navClick, dataNav) {
+function clickTab (a, b, c) {
+  const contents = document.querySelectorAll('.tabs__content');
   const tabs = document.querySelectorAll('.tabs__caption');
-  navClick.onclick = () => {
+
+  a.onclick = () => {
+    contents.forEach(element => {
+      element.classList.remove('tabs__content_active');
+    });
+    b.classList.add('tabs__content_active');
 
     tabs.forEach(element => {
       element.classList.remove('tabs__caption_active');
     });
-    document.querySelector(`${dataNav}`).classList.add('tabs__caption_active');
+    c.classList.add('tabs__caption_active');
   };
-} 
-clickNavigation(podsClick, dataPods);
-clickNavigation(smokeClick, dataSmoke);
-clickNavigation(beerClick, dataBeer);
 
+}
+
+
+clickTab(podsClick, idPods, dataPods);
+clickTab(smokeClick, idSmoke, dataSmoke);
+clickTab(beerClick, idBeer, dataBeer);
