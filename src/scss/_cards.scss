@@ -25,10 +25,6 @@
     max-width: 180px;
     min-height: 300px;
   }
-  // &:hover {
-  //   transition: 0.3s;
-  //   transform: scale(1.07);
-  // }
 
   &__img {
     width: 180px;
@@ -53,6 +49,10 @@
   &__descr {
     font-size: 0.7rem;
     text-align: center;
+
+    span {
+      color: $color-beer;
+    }
   }
 
   & hr {
